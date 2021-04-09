@@ -31,7 +31,7 @@ void loop()  {
       }
       Serial.print("         pm2.5: ");
       Serial.print(n2);
-       if (n2 < 200 && n2 > ){
+       if (n2 < 200 && n2 > 100){
        digitalWrite(yellow, HIGH);
        delay(520);
        digitalWrite(yellow, LOW);
