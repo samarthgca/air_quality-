@@ -31,14 +31,14 @@ void loop()  {
       }
       Serial.print("         pm2.5: ");
       Serial.print(n2);
-       if (n2 < 300 && n2 > 200){
+       if (n2 < 500 && n2 > 100){
        digitalWrite(yellow, HIGH);
        delay(520);
        digitalWrite(yellow, LOW);
       }
       Serial.print("         pm10: ");
       Serial.print(n3);
-       if(n2 > 400){
+       if(n2 > 600){
        digitalWrite(red, HIGH);
        delay(520);
        digitalWrite(red, LOW);
